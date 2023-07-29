@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assetmanagement';
+  title = 'Asset Management';
+  constructor(){
+    // setTimeout(()=>{
+    //   this.title="Changed title after 2 seconds"
+    // },2000);
+  }
 }
+
