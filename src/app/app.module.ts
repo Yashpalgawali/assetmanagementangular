@@ -8,7 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { ViewcompanyComponent } from './MyComponents/viewcompany/viewcompany.component';
 import { HomeComponent } from './MyComponents/home/home.component';
-import { EditcompanyComponent } from './editcompany/editcompany.component';
+import { EditcompanyComponent } from './MyComponents/editcompany/editcompany.component';
+
+import DataTable from 'datatables.net-bs5';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { EditcompanyComponent } from './editcompany/editcompany.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTable
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { CompanyserviceService } from 'src/app/Services/companyservice.service';
 import { Company } from 'src/app/company';
 
-
 @Component({
   selector: 'app-company',
   templateUrl: './company.component.html',
@@ -24,7 +23,6 @@ export class CompanyComponent implements OnInit {
   savecompany()
   {
     this.compserv.saveCompany(this.company).subscribe(data=>this.company),(error: any)=>console.log(error);
-  
   }
   gotoCompanyList()
   {
